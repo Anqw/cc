@@ -10,3 +10,6 @@ mv * ../
 cd -
 rm -rf VOCdevkit
 cd -
+
+cd checkpoints/voc/faster_rcnn/faster_rcnn_R_101_FPN_base3
+wget http://dl.yf.io/fs-det/models/voc/split3/base_model/model_final.pth
