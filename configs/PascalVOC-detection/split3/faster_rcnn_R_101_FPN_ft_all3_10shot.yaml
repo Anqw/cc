@@ -8,9 +8,9 @@ MODEL:
   ROI_HEADS:
     NUM_CLASSES: 20
     OUTPUT_LAYER: "CosineSimOutputLayers"
-    FREEZE_FEAT: True
+    FREEZE_FEAT: False
   BACKBONE:
-    FREEZE: True
+    FREEZE: False
   PROPOSAL_GENERATOR:
     FREEZE: False
 INPUT:
@@ -24,7 +24,7 @@ SOLVER:
   BASE_LR: 0.005
   STEPS: (1300, 1700)
   MAX_ITER: 2000
-  CHECKPOINT_PERIOD: 1000
+  CHECKPOINT_PERIOD: 100
   WARMUP_ITERS: 10
 OUTPUT_DIR: "checkpoints/voc/faster_rcnn/faster_rcnn_R_101_FPN_ft_normalized_all3_10shot_randnovel"
 #META: True
